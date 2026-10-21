@@ -173,6 +173,21 @@ footer{padding:30px 20px;border-top:1px solid var(--line);display:flex;justify-c
 }
 </style>
 <link rel="preload" as="image" href="assets/img/hero.webp"/>
+<style>
+.booth-record{background:var(--cream);color:var(--ink);border-top:12px solid #eee9df;padding:96px 0}
+.record-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:44px;border-top:1px solid rgba(0,0,0,.14)}
+.record-item{padding:36px 24px 34px;border-bottom:1px solid rgba(0,0,0,.14);border-right:1px solid rgba(0,0,0,.14)}
+.record-item:last-child{border-right:0}
+.record-item .num{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:clamp(38px,5.4vw,62px);line-height:1;letter-spacing:-.03em}
+.record-item .num em{font-style:normal;font-size:.34em;margin-left:6px;letter-spacing:.06em;color:#6b675f}
+.record-item .cap{margin-top:16px;font-size:12.5px;line-height:1.85;color:#5d5a53}
+.record-case{margin-top:56px;border:1px solid rgba(0,0,0,.14);border-radius:18px;padding:30px 28px;background:#fff}
+.record-case .rc-top{display:flex;justify-content:space-between;gap:14px;font-size:10px;letter-spacing:.2em;color:#8a857c;text-transform:uppercase;font-weight:700}
+.record-case h3{font-size:clamp(20px,2.6vw,26px);margin:14px 0 10px;letter-spacing:-.02em}
+.record-case p{font-size:13px;line-height:1.9;color:#55524b}
+.record-note{margin-top:30px;font-size:11px;color:#8a857c}
+@media(max-width:760px){.record-grid{grid-template-columns:1fr}.record-item{border-right:0}}
+</style>
 </head>
 <body id="top">
 <header>
@@ -249,6 +264,30 @@ footer{padding:30px 20px;border-top:1px solid var(--line);display:flex;justify-c
 </div>
 </section>
 
+
+<section class="booth booth-record" id="record">
+<div class="wrap">
+  <div class="booth-banner booth-banner-left">
+    <div class="booth-kicker">TRACK RECORD</div>
+    <h2>実績</h2>
+    <p>数字だけですべては語れない。でも、数字は嘘をつかない。</p>
+  </div>
+
+  <div class="record-grid">
+    <div class="record-item"><div class="num">4<em>年</em></div><div class="cap">理学療法士として<br/>整形外科の外来・入院</div></div>
+    <div class="record-item"><div class="num">500<em>名</em></div><div class="cap">これまで身体と向き合った<br/>患者・クライアント</div></div>
+    <div class="record-item"><div class="num">10<em>名</em></div><div class="cap">3ヶ月 自己管理コーチング<br/>実施人数</div></div>
+  </div>
+
+  <div class="record-case">
+    <div class="rc-top"><span>CASE 01</span><span>30代男性</span></div>
+    <h3>肩の痛みと、強い身体は両立する。</h3>
+    <p>肩関節周囲炎による可動域制限に対し、リハビリとトレーニングを分けずに設計。痛みのない範囲で可動域を改善しながら、体幹・下肢を含めた全身の安定性を並行して構築した。痛みを避けるだけのリハビリで終わらせず、その先の身体の使い方まで扱う。</p>
+  </div>
+
+  <p class="record-note">※ 事例は個人が特定できないよう匿名化しています。</p>
+</div>
+</section>
 <section class="booth members booth-members" id="items"><div class="wrap apparel-grid"><div class="apparel-image"><img alt="base discipline items" src="assets/img/items.webp" width="900" height="1350" loading="lazy" decoding="async"/></div><div class="apparel-copy"><div class="label">BASE DISCIPLINE｜ITEMS</div><h2>base disciplineを、<br/>日常に。</h2><div class="members-line" style="margin:26px 0"></div><p>身につけるもの。トレーニングで使うもの。<br/>毎日の生活で使うもの。<br/><strong>自分の基準を思い出すきっかけを、日常の中に。</strong></p><div class="members-mark">MEMBERS ONLY</div></div></div></section>
 <div class="booth booth-contact" id="contact"><div class="booth-banner wrap"><div class="booth-kicker">COUNSELING</div><h2>無料相談</h2><p></p></div><section class="cta" id="counseling">
 <div class="wrap">
