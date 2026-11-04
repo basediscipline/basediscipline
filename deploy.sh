@@ -37,8 +37,12 @@ if [ "$FORCE_PUSH" = "1" ]; then
     git commit -m "${MSG:-chore(lp): update}" || exit 2
   fi
   say "== push"
-  if ! git push origin main; then
-    say "!! push 失敗（認証トークン切れの可能性）"
+  TOKF=/home/node/.openclaw/workspace/work/secrets/github_token.txt
+  if [ -s "$TOKF" ]; then
+    TOK=$(tr -d '\r\n' < "$TOKF")
+    git push "https://x:${TOK}@github.com/basediscipline/basediscipline.git" HEAD:main || { say "!! push 失敗（認証トークン切れの可能性）"; exit 3; }
+  elif ! git push origin main; then
+    say "!! push 失敗（認証トークン未設定: $TOKF）"
     exit 3
   fi
 fi
