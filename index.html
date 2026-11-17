@@ -6,13 +6,13 @@
 <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
 <meta content="#070707" name="theme-color"/>
 <title>2ヶ月 自己管理自走化プログラム｜base discipline</title>
-<meta content="一人では続かない人へ。自己管理の定着を支える、完全オンラインの2ヶ月コーチング。全8回（各60分・週1回）、オンライン（Zoom）で完結、日常のLINE伴走サポート。初回トライアル90分から。プログラムの詳細はご相談時にご案内します。満18歳以上限定。" name="description"/>
+<meta content="なりたい自分に向けて、続けられる毎日をつくる。運動・睡眠・食事を土台に、自分で続け、立て直す習慣を育てる完全オンラインの2ヶ月コーチング。全8回（各60分・週1回）、オンライン（Zoom）で完結、Notionの日記とコメント。初回トライアル90分から。プログラムの詳細はご相談時にご案内します。満18歳以上限定。" name="description"/>
 <link rel="canonical" href="https://basediscipline.github.io/basediscipline/"/>
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="base discipline"/>
 <meta property="og:locale" content="ja_JP"/>
 <meta property="og:title" content="2ヶ月 自己管理自走化プログラム｜base discipline"/>
-<meta property="og:description" content="一人では続かない人へ。自己管理の定着を支える、完全オンラインの2ヶ月コーチング。全8回（各60分・週1回）、オンライン（Zoom）で完結、日常のLINE伴走サポート。初回トライアル90分から。プログラムの詳細はご相談時にご案内します。満18歳以上限定。"/>
+<meta property="og:description" content="なりたい自分に向けて、続けられる毎日をつくる。運動・睡眠・食事を土台に、自分で続け、立て直す習慣を育てる完全オンラインの2ヶ月コーチング。全8回（各60分・週1回）、オンライン（Zoom）で完結、Notionの日記とコメント。初回トライアル90分から。プログラムの詳細はご相談時にご案内します。満18歳以上限定。"/>
 <meta property="og:url" content="https://basediscipline.github.io/basediscipline/"/>
 <meta property="og:image" content="https://basediscipline.github.io/basediscipline/assets/img/og.jpg"/>
 <meta property="og:image:width" content="1200"/>
@@ -173,7 +173,7 @@ footer{padding:30px 20px;border-top:1px solid var(--line);display:flex;justify-c
   .service-overview p{font-size:13px;line-height:1.8}
 }
 </style>
-<link rel="preload" as="image" href="assets/img/hero.webp"/>
+<link rel="preload" as="image" href="assets/img/portrait.webp"/>
 <style>
 .booth-record{background:var(--cream);color:var(--ink);border-top:12px solid #eee9df;padding:96px 0}
 .record-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:44px;border-top:1px solid rgba(0,0,0,.14)}
@@ -308,60 +308,105 @@ section[id],div[id]{scroll-margin-top:78px}
 .phase p{font-size:13px;line-height:1.9;color:#5c5850}
 @media(max-width:760px){.phase-list{grid-template-columns:1fr;margin-top:28px}.phase{padding:20px 18px 22px}}
 </style>
+<style>
+/* Coaching: service, guide and practical examples */
+.hero.coaching-hero{display:block;min-height:0;padding:154px 0 76px;background:#10110f}
+.hero.coaching-hero:after{display:none}
+.coaching-hero .hero-layout{display:grid;grid-template-columns:1.2fr .8fr;gap:64px;align-items:center}
+.coaching-hero .hero-content{width:100%;padding:0;max-width:none}
+.coaching-hero h1{font-size:clamp(38px,4.1vw,60px);line-height:1.45;letter-spacing:-.045em}
+.coaching-hero .hero-sub{letter-spacing:.09em;margin-top:22px;line-height:1.8}
+.coaching-hero .hero-lead{max-width:30em;font-size:16px;text-shadow:none;line-height:1.95}
+.coaching-hero .hero-note{font-size:12px;letter-spacing:0;color:#bbb8ad;line-height:1.8;margin-top:20px}
+.hero-portrait{margin:0;border:1px solid #35362f;background:#191a16;border-radius:18px;overflow:hidden}
+.hero-portrait img{height:440px;object-fit:cover;object-position:center 24%}
+.hero-portrait figcaption{padding:18px 20px;color:#e0dccf;font-size:12px;line-height:1.8}
+.hero-portrait strong{display:block;color:#fff;font-size:16px;margin-bottom:3px}
+.hero .btn-outline{color:#fff}.hero .actions{margin-top:28px}
+.coaching-how{background:#f1eee6;color:#171813}
+.coaching-how .section-head p{color:#605e55}
+.habit-loop{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;padding:0;margin:32px 0}
+.habit-loop li{position:relative;background:#fff;border:1px solid #d9d4c5;border-radius:14px;padding:22px}
+.habit-loop .step-number{font-size:12px;color:#8b713e;letter-spacing:.15em}
+.habit-loop h3{font-size:20px;margin:12px 0}.habit-loop p{font-size:13px;color:#615e55}
+.pillar-row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:28px 0 50px}
+.pillar-row article{padding:20px 0;border-top:2px solid #ad935c}.pillar-row h3{font-size:22px;margin-bottom:10px}.pillar-row p{font-size:14px;color:#615e55}
+.record-demo{display:grid;grid-template-columns:.85fr 1.15fr;gap:46px;align-items:start;margin-top:50px}
+.record-demo h3{font-size:30px;margin:12px 0 18px}.record-demo p{font-size:14px;color:#615e55}
+.demo-sheet{background:#fff;border:1px solid #d7d1c2;border-radius:16px;padding:28px;box-shadow:0 12px 34px #22221108}
+.demo-sheet .demo-label{display:inline-block;background:#eeeadf;padding:5px 10px;border-radius:6px;font-size:11px;color:#6b5b38;margin-bottom:12px}
+.demo-sheet dl{margin:0}.demo-sheet dt{font-size:12px;font-weight:700;color:#806a3c;margin-top:18px}.demo-sheet dd{margin:7px 0 0;padding-bottom:16px;border-bottom:1px solid #ece8de;font-size:14px;line-height:1.8}.demo-sheet dd:last-child{border:0;padding-bottom:0}
+.entry-section{background:#fff;color:#111}.entry-section .section-head p{color:#605e55}
+.entry-options{display:grid;grid-template-columns:1fr 1fr;gap:24px}.entry-option{border:1px solid #d7d1c2;border-radius:18px;padding:32px;background:#faf8f3;scroll-margin-top:100px}
+.entry-option.trial{background:#f1ecdf;border-color:#b59b63}.entry-option h3{font-size:28px;margin:12px 0}.entry-option .entry-price{font-weight:700;font-size:22px;margin:16px 0}.entry-option .entry-price small{font-size:13px;font-weight:400}.entry-option ul{padding-left:1.2em;font-size:14px;line-height:1.9;margin:20px 0}.entry-option p{font-size:14px;color:#565248}.entry-option .entry-note{font-size:12px;margin-top:16px}.entry-option .actions{margin-top:24px}.entry-option .btn{width:100%}
+.lifestyle-photo{margin:26px 0 0}.lifestyle-photo img{max-height:310px;object-fit:cover;object-position:center 44%;border-radius:12px}.lifestyle-photo figcaption{font-size:12px;line-height:1.8;color:#777268;margin-top:10px}
+#start,#support,#program{scroll-margin-top:90px}
+@media(max-width:760px){.hero.coaching-hero{padding:142px 0 56px}.coaching-hero .hero-layout{grid-template-columns:1fr;gap:34px}.coaching-hero h1{font-size:clamp(30px,7.8vw,42px)}.coaching-hero .hero-lead{font-size:14px}.hero-portrait{display:grid;grid-template-columns:110px 1fr;align-items:center}.hero-portrait img{height:146px;object-position:center 24%}.hero-portrait figcaption{padding:16px;font-size:11px}.hero-portrait strong{font-size:15px}.hero .actions{gap:12px;align-items:stretch}.hero .actions .btn{width:100%}.habit-loop{grid-template-columns:1fr 1fr;gap:10px}.habit-loop li{padding:18px 15px}.habit-loop h3{font-size:18px}.pillar-row{grid-template-columns:1fr;gap:0}.pillar-row article{padding:18px 0}.record-demo{grid-template-columns:1fr;gap:22px}.demo-sheet{padding:22px}.entry-options{grid-template-columns:1fr}.entry-option{padding:26px 22px}.entry-option h3{font-size:26px}}
+@media(max-width:360px){.habit-loop{grid-template-columns:1fr}}
+</style>
 </head>
 <body id="top">
 <header>
 <a href="#top"><img alt="base discipline" src="assets/img/logo.webp" width="400" height="267" decoding="async"/></a>
-<nav><a href="#forwhom">FOR WHOM</a><a href="#program">PROGRAM</a><a href="#flow">FLOW</a><a href="#about">ABOUT</a><a href="#items">ITEMS</a><a class="nav-cta" href="https://lin.ee/9OyDmdiY" rel="noopener" target="_blank">無料相談</a></nav>
+<nav><a href="#forwhom">FOR WHOM</a><a href="#program">PROGRAM</a><a href="#flow">FLOW</a><a href="#about">ABOUT</a><a href="#items">ITEMS</a><a class="nav-cta" href="#start">相談・体験</a></nav>
 </header>
 <main>
-<section class="hero">
-<img alt="base discipline" src="assets/img/hero.webp"/>
-<div class="wrap hero-content">
-<div class="label" style="opacity:.8">BASE DISCIPLINE</div>
-<h1>強い人ほど、<br class="mobile-only-break"/>静かだ。</h1>
+<section class="hero coaching-hero">
+<div class="wrap hero-layout"><div class="hero-content">
+<div class="label">BASE DISCIPLINE｜ONLINE COACHING</div>
+<h1>変わりたい。<br/>でも、毎日が変わらない。</h1>
 <p class="hero-sub">完全オンライン｜2ヶ月 自己管理自走化プログラム</p>
-<p class="hero-lead">一人では続かないことを、<br/>自分で続けられる習慣へ。</p>
-<div class="actions"><a class="btn btn-light" href="https://lin.ee/9OyDmdiY" rel="noopener" target="_blank">無料相談を予約する</a><a class="hero-link" href="#program">プログラムを見る</a></div>
-<p class="hero-note">※満18歳以上の方が対象です。</p>
-</div>
+<p class="hero-lead">運動・睡眠・食事を土台に、<br/>なりたい自分につながる習慣をつくる。<br/>一人では続かなかった人のためのコーチング。</p>
+<div class="actions"><a class="btn btn-light" href="#trial">体験コーチングを見る｜90分・15,000円</a><a class="btn btn-outline" href="#counseling">まずは無料で相談する｜30分</a></div>
+<p class="hero-note">Notionの日記・コメント ＋ 週1回のZoom面談。<br/>目標がまだ曖昧でも大丈夫です。満18歳以上対象。</p>
+</div><figure class="hero-portrait"><img alt="オンラインコーチングを担当する増輪孝太" src="assets/img/portrait.webp" width="800" height="1067" fetchpriority="high"/><figcaption><strong>増輪 孝太 / Kota</strong>理学療法士・NSCA-CPT<br/>目標と日々の行動を、一緒につなげます。</figcaption></figure></div>
 </section>
 <section class="booth-section booth-concept light" id="concept">
 <div class="wrap split">
-<div><div class="label">FOR YOU</div><h2>分かっている。<br/>でも、続かない。</h2></div>
+<div><div class="label">FOR YOU</div><h2>なりたい自分と、<br/>今日の行動をつなぐ。</h2></div>
 <div class="split-copy">
-<p>運動。食事。睡眠。<br/>やるべきことは、知っている。</p>
-<p><strong>足りないのは、知識ではなく、続けられる設計。</strong></p>
-<p>意志が弱いわけではない。<br/><strong>設計が、まだ無いだけ。</strong></p>
+<p>叶えたいことはある。<br/>けれど、今日の行動がそこにつながっているか、自信がない。</p>
+<p><strong>目指す生き方から、今の生活で続けられる行動を決める。</strong></p>
+<p>運動・睡眠・食事を土台に、行動と振り返りを重ねる。<br/><strong>崩れても、自分で戻れる習慣を育てます。</strong></p>
 </div>
 </div>
 </section>
 <section id="forwhom" style="background:#fff;color:#111;padding:clamp(72px,9vw,120px) 0"><div class="wrap">
 <div class="label" style="font-size:11px;letter-spacing:.22em;font-weight:800;color:#a18447">FOR WHOM</div>
-<h2 style="font-size:clamp(30px,4.2vw,54px);line-height:1.16;letter-spacing:-.03em;margin:14px 0 0">一人では、<br class="mobile-only-break"/>続かない人へ。</h2>
-<p style="margin-top:18px;color:#57534b;font-size:15px">やろうと決めても、忙しさで後回しになる。<br/>始められても、気づくと元に戻ってしまう。そんな方のためのコーチングです。</p>
+<h2 style="font-size:clamp(30px,4.2vw,54px);line-height:1.16;letter-spacing:-.03em;margin:14px 0 0">なりたい自分はある。<br class="mobile-only-break"/>でも、続かない人へ。</h2>
+<p style="margin-top:18px;color:#57534b;font-size:15px">仕事でも、身体でも、これからの生き方でも。もっと良くしたい気持ちはある。<br/>それでも、目標がぼんやりしていたり、今の頑張りでいいのか迷ったりする。そんな方のためのコーチングです。</p>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:36px">
-<div style="border:1px solid #ddd7ca;border-radius:16px;padding:26px;background:#faf8f3"><small style="font-size:10px;letter-spacing:.2em;color:#a18447;font-weight:800">01</small><strong style="display:block;margin:10px 0 8px;font-size:16px;line-height:1.5">決めるのは、<br/>いつも自分。</strong><p style="font-size:13px;line-height:1.9;color:#5c5850;margin:0">だから、自分の身体と生活は後回しになりやすい。それでも仕事は前に進んでいる。</p></div>
-<div style="border:1px solid #ddd7ca;border-radius:16px;padding:26px;background:#faf8f3"><small style="font-size:10px;letter-spacing:.2em;color:#a18447;font-weight:800">02</small><strong style="display:block;margin:10px 0 8px;font-size:16px;line-height:1.5">一人で走っていると、<br/>戻り方が分からない。</strong><p style="font-size:13px;line-height:1.9;color:#5c5850;margin:0">崩れること自体は、誰にでもある。問題は、崩れたあとに戻る手順を持っているかどうか。</p></div>
-<div style="border:1px solid #ddd7ca;border-radius:16px;padding:26px;background:#faf8f3"><small style="font-size:10px;letter-spacing:.2em;color:#a18447;font-weight:800">03</small><strong style="display:block;margin:10px 0 8px;font-size:16px;line-height:1.5">目標はある。<br/>あとは、リズム。</strong><p style="font-size:13px;line-height:1.9;color:#5c5850;margin:0">やることを増やす前に、今の生活で無理なく続く行動と、振り返る時間を決める。</p></div>
+<div style="border:1px solid #ddd7ca;border-radius:16px;padding:26px;background:#faf8f3"><small style="font-size:10px;letter-spacing:.2em;color:#a18447;font-weight:800">01</small><strong style="display:block;margin:10px 0 8px;font-size:16px;line-height:1.5">今の頑張りで、<br/>いいのか分からない。</strong><p style="font-size:13px;line-height:1.9;color:#5c5850;margin:0">何かを変えたいのに、何を優先すればいいか曖昧。行動しても、これでいいのか迷ってしまう。</p></div>
+<div style="border:1px solid #ddd7ca;border-radius:16px;padding:26px;background:#faf8f3"><small style="font-size:10px;letter-spacing:.2em;color:#a18447;font-weight:800">02</small><strong style="display:block;margin:10px 0 8px;font-size:16px;line-height:1.5">始めても、<br/>元の生活に戻ってしまう。</strong><p style="font-size:13px;line-height:1.9;color:#5c5850;margin:0">崩れること自体は、誰にでもある。問題は、崩れたあとに戻る手順を持っているかどうか。</p></div>
+<div style="border:1px solid #ddd7ca;border-radius:16px;padding:26px;background:#faf8f3"><small style="font-size:10px;letter-spacing:.2em;color:#a18447;font-weight:800">03</small><strong style="display:block;margin:10px 0 8px;font-size:16px;line-height:1.5">目指したい姿と、<br/>毎日がつながらない。</strong><p style="font-size:13px;line-height:1.9;color:#5c5850;margin:0">やることを増やす前に、今の生活で無理なく続く行動と、振り返る時間を決める。</p></div>
 </div>
 <p style="margin-top:34px;font-size:clamp(17px,2vw,22px);font-weight:700;line-height:1.6">変えるのは、意志ではなく、習慣の置き方。</p>
-<p style="margin-top:10px;color:#5c5850;font-size:14px">目標を決める。小さく動く。振り返って、調整する。<br/>その繰り返しを、日常に定着させます。</p>
+<p style="margin-top:10px;color:#5c5850;font-size:14px">目標がまだ明確でなくても構いません。まずは、どんな生活を送りたいかを整理するところから。<br/>目指す方向と、今週の小さな行動をつなげていきます。</p>
+</div></section>
+<section class="coaching-how" id="support"><div class="wrap">
+<div class="section-head"><div class="label">HOW WE SUPPORT YOU</div><h2>面談だけで終わらない。<br/>毎日の中で、試して整える。</h2><p>Notionに日記を書き、コメントで振り返る。週1回、Zoomで現状と次の行動を再確認する。<br/>この流れを繰り返し、ご自身で次の行動を決められる状態を目指します。</p></div>
+<ol class="habit-loop" aria-label="コーチングで繰り返す4つのステップ">
+<li><span class="step-number">01 / ZOOM</span><h3>目指す生活を整理</h3><p>どうなりたいか。何を大切にしたいか。曖昧なところから、一緒に言葉にします。</p></li>
+<li><span class="step-number">02 / PLAN</span><h3>今週の行動を決める</h3><p>目標への道筋を描き、いつ・何を・どれくらいやるか、本人が選びます。</p></li>
+<li><span class="step-number">03 / DAILY LIFE</span><h3>生活の中で試す</h3><p>今の生活でできる量から実践。Notionの日記に、行動や気づき、つまずいたことを残します。</p></li>
+<li><span class="step-number">04 / REVIEW</span><h3>一緒に振り返る</h3><p>日記へのコメントと週1回のZoom面談で現状を確認し、次のアクションプランを再確認します。</p></li></ol>
+<div class="pillar-row" aria-label="習慣づくりの3つの土台"><article><h3>運動</h3><p>いつ、どこで、どれくらい動くか。生活に組み込める量とタイミングを考えます。</p></article><article><h3>睡眠</h3><p>寝る前の過ごし方や生活時間を振り返り、続けられるリズムを探します。</p></article><article><h3>食事</h3><p>忙しい日にも実行できる選び方や準備を考え、無理のない行動へ落とし込みます。</p></article></div>
+<div class="record-demo"><div><div class="label">YOUR WEEKLY REVIEW</div><h3>「できた・できない」の<br/>先を、一緒に考える。</h3><p>Notionの日記に日々の行動や気づきを残し、孝太がコメントします。週1回の面談では、前回から進んだこと、今週の目標、具体的な行動を再確認します。うまくいかない週も、続けられる形を探すための材料になります。</p><p style="margin-top:16px">掲載している内容は架空の記入例です。顧客の実際の記録や成果ではありません。</p></div><article class="demo-sheet" aria-label="架空の週間振り返り記入例"><span class="demo-label">記入イメージ｜架空の例</span><dl><dt>目指したい生活</dt><dd>仕事が忙しくても、自分の身体と生活を後回しにしない。</dd><dt>日記：今週の行動・気づき</dt><dd>昼休みに10分歩けた日が2日。夜に予定していた運動は、残業でできなかった。</dd><dt>孝太からのコメント（架空の例）</dt><dd>昼休みは実行できていますね。夜が難しかった理由を振り返り、次の面談では昼に続ける計画を一緒に確認しましょう。</dd><dt>次のオンライン面談で確認すること</dt><dd>夜に頼らず、昼休みに身体を動かす時間をつくる。</dd><dt>具体的な行動</dt><dd>月・水・金の昼食後に10分歩く。雨の日は室内で5分動く。</dd></dl></article></div>
 </div></section>
 <section id="program" style="background:#fff"><div class="wrap">
 <div class="program-card"><div class="program-top"><div><div class="label">2ヶ月 自己管理自走化プログラム</div><h3>自分で整え、<br/>自分で動かせる<br/>状態へ。</h3></div><div class="price">2ヶ月<small>全8回 / 各60分</small></div></div>
-<p class="program-lead">一人では継続しにくい人の、自己管理の定着を支えるコーチングです。<br/>全8回（各60分・週1回ペース・2ヶ月）を、すべてオンライン（Zoom）で実施します。<br/>目標・今週の行動・振り返りを一緒に整理し、日常はLINEと記録で伴走します。<br/>睡眠・食事・運動・時間の使い方など、ご自身が続けたいテーマを扱います。</p>
-<p class="program-punch">教わる2ヶ月ではなく、<br class="mobile-only-break"/>自分で回せるようになる2ヶ月。</p>
+<p class="program-lead">本人の目標に向けて、継続できる習慣を育てるコーチングです。<br/>全8回（各60分・週1回ペース・2ヶ月）を、すべてオンライン（Zoom）で実施します。<br/>目指す姿までの道筋を整理し、今の生活で続けられる行動に落とし込みます。<br/>土台となるのは、運動・睡眠・食事。日常はNotionの日記とコメントで伴走し、週1回のZoom面談で振り返りと次のアクションプランを再確認します。</p>
+<p class="program-punch">続ける。振り返る。立て直す。<br class="mobile-only-break"/>自分で回す習慣を、2ヶ月かけて。</p>
 <div class="phase-list">
-<div class="phase"><div class="ph-top"><span class="ph-k">PHASE 01</span><span class="ph-w">WEEK 01–02</span></div><h4>止まっている原因を、<br/>特定する。</h4><p>今の生活と、続かなかった場面を振り返る。目標を整理し、今週できる小さな行動を決める。</p></div>
-<div class="phase"><div class="ph-top"><span class="ph-k">PHASE 02</span><span class="ph-w">WEEK 03–05</span></div><h4>決めた行動を、<br/>仕組みにする。</h4><p>やることを週の枠に固定し、崩れた原因をひとつずつ潰していく。うまくいかない週も、検証の材料になる。</p></div>
-<div class="phase"><div class="ph-top"><span class="ph-k">PHASE 03</span><span class="ph-w">WEEK 06–08</span></div><h4>自分で回せるかを、<br/>試す。</h4><p>こちらの手を借りずに回るかを確かめる。崩れたときの戻し方を手順書に残して、卒業する。</p></div>
+<div class="phase"><div class="ph-top"><span class="ph-k">PHASE 01</span><span class="ph-w">WEEK 01–02</span></div><h4>目指す生活と、<br/>道筋を描く。</h4><p>どんな生活を送りたいか、何を大切にしたいかを整理する。目標までの道筋を描き、運動・睡眠・食事から今週できる行動を決める。</p></div>
+<div class="phase"><div class="ph-top"><span class="ph-k">PHASE 02</span><span class="ph-w">WEEK 03–05</span></div><h4>決めた行動を、<br/>仕組みにする。</h4><p>生活の中で実行するタイミングと、無理なく続けられる量を決める。毎週の振り返りから、続けやすい形へ調整する。</p></div>
+<div class="phase"><div class="ph-top"><span class="ph-k">PHASE 03</span><span class="ph-w">WEEK 06–08</span></div><h4>崩れても、<br/>自分で立て直す。</h4><p>続いた理由も、止まった理由も自分で振り返る。次の行動と、崩れたときの戻し方を整理して、終了後の生活につなげる。</p></div>
 </div>
-<div class="included"><div class="inc"><strong>オンライン面談｜60分 × 8回</strong><span>週1回、進んだこと・今週の目標・具体的な行動を整理します。</span></div><div class="inc"><strong>日常のLINE伴走サポート</strong><span>行動の振り返りや、続けるうえでの悩みを日常の中でサポート。</span></div><div class="inc"><strong>日記と、1日1回のフィードバック</strong><span>日記は任意で、1行でも構いません。返信は1日1回、翌日12時まで（日曜を除く）にお返しします。</span></div><div class="inc"><strong>自分で続けるための行動計画</strong><span>最終回に、今後の行動・振り返り・崩れたときの戻し方をまとめます。</span></div></div>
-<div class="note"><strong>提供形態</strong><br/>オンライン（Zoom）で完結 ＋ 日常のLINE伴走サポート。<br/><span style="opacity:.72">※ 対面セッションは含みません。インターネット環境があれば、ご自宅等から受講できます。</span><br/><span style="opacity:.72">※ 効果や成果には個人差があり、特定の結果を保証するものではありません。</span></div><div class="actions"><a class="btn btn-dark" href="https://lin.ee/9OyDmdiY" rel="noopener" target="_blank">30分の無料相談を予約する</a></div></div></div></section>
+<div class="included"><div class="inc"><strong>オンライン面談｜60分 × 8回</strong><span>週1回、進んだこと・今週の目標・具体的な行動を整理します。</span></div><div class="inc"><strong>Notionの日記とコメント</strong><span>日記に残した行動や気づきに、孝太がコメント。次の実践につなげます。</span></div><div class="inc"><strong>日記と、1日1回のフィードバック</strong><span>日記は任意で、1行でも構いません。返信は1日1回、翌日12時まで（日曜を除く）にお返しします。</span></div><div class="inc"><strong>自分で続けるための行動計画</strong><span>最終回に、今後の行動・振り返り・崩れたときの戻し方をまとめます。</span></div></div>
+<div class="note"><strong>提供形態</strong><br/>週1回のオンライン面談（Zoom）＋ Notionの日記・コメント。LINEは日程調整等の連絡に利用します。<br/><span style="opacity:.72">※ 対面セッションは含みません。インターネット環境があれば、ご自宅等から受講できます。</span><br/><span style="opacity:.72">※ 効果や成果には個人差があり、特定の結果を保証するものではありません。</span></div><div class="actions"><a class="btn btn-dark" href="#start">無料相談・体験を選ぶ</a></div></div></div></section>
 
 <section class="changes"><div class="wrap">
-<div class="section-head"><div class="label">AFTER 2 MONTHS</div><h2>2ヶ月で、<br class="mobile-only-break"/>毎日の手触りが変わる。</h2><p>目指すのは、決めた行動を続け、崩れても自分で立て直せる状態です。</p></div>
+<div class="section-head"><div class="label">AFTER 2 MONTHS</div><h2>2ヶ月で育てたい、<br class="mobile-only-break"/>3つの力。</h2><p>目指すのは、目標を見失わずに行動を続け、崩れても自分で立て直せる状態です。</p></div>
 <div class="ch-grid">
 <div class="ch"><span class="ch-k">01</span><h3>行動</h3><p>今週やることが、具体的になる。</p></div>
 <div class="ch"><span class="ch-k">02</span><h3>振り返り</h3><p>続いた理由も、止まった理由も分かる。</p></div>
@@ -379,15 +424,15 @@ section[id],div[id]{scroll-margin-top:78px}
 <div class="pr-item"><span class="pr-num">03</span><div class="pr-body"><h3>創る</h3><p>整った身体と時間には、余白が生まれる。<br/>余白から、次の一手が生まれる。</p></div></div>
 </div>
 </div></section>
-<section class="philosophy"><div class="wrap"><div class="section-head" style="color:#111"><div class="label">PHILOSOPHY</div><h2 style="line-height:1.15">Minimalism →<br class="mobile-only-break"/>Discipline →<br class="mobile-only-break"/>Freedom</h2><p style="color:#57534b">減らす。続ける。自由になる。</p></div><div class="split" style="gap:56px"><div class="philosophy-lead"><p>2ヶ月でやることは、増やすことではありません。<br/>やることを削り、毎週同じリズムで回す。<br/>その結果として、身体と生活が変わります。</p></div><div class="philosophy-body"><p><strong>育てるのは、自分を動かす力。</strong><br/>運動も、食事も、時間の使い方も。続けたいことを、続けられる形へ。</p><p>教えられた通りに動くのではなく、<br/>自分で考え、自分で調整できる状態をつくる。<br/>それが、ここで身につくものです。</p><p><strong>自由は、規律の先にある。</strong></p></div></div></div></section>
+<section class="philosophy"><div class="wrap"><div class="section-head" style="color:#111"><div class="label">PHILOSOPHY</div><h2 style="line-height:1.15">Minimalism →<br class="mobile-only-break"/>Discipline →<br class="mobile-only-break"/>Freedom</h2><p style="color:#57534b">減らす。続ける。自由になる。</p></div><div class="split" style="gap:56px"><div class="philosophy-lead"><p>2ヶ月でやることは、増やすことではありません。<br/>やることを削り、毎週同じリズムで回す。<br/>運動・睡眠・食事を整えながら、自分で続けられる形を探します。</p></div><div class="philosophy-body"><p><strong>育てるのは、自分を動かす力。</strong><br/>運動も、食事も、時間の使い方も。続けたいことを、続けられる形へ。</p><p>教えられた通りに動くのではなく、<br/>自分で考え、自分で調整できる状態をつくる。<br/>それが、ここで身につくものです。</p><p><strong>強い人ほど、静かだ。</strong><br/>自由は、規律の先にある。</p><figure class="lifestyle-photo"><img src="assets/img/hero.webp" alt="運動を日常に取り入れる増輪孝太" width="1600" height="900" loading="lazy"/><figcaption>運営者自身も、身体を動かす時間を生活の中に。コーチングはオンラインで行います。</figcaption></figure></div></div></div></section>
 <section class="flow-sec" id="flow"><div class="wrap"><div class="section-head" style="color:#111"><div class="label">HOW IT WORKS</div><h2>はじめかた</h2><p style="color:#57534b">申し込みから、卒業までの流れ。</p></div>
 <div class="flow-grid">
-<div class="flow-step"><div class="step-no">STEP 01</div><h3>無料相談</h3><div class="step-meta">30分</div><p>現在地・目標・続かない原因を整理します。話すだけでも構いません。</p></div>
-<div class="flow-step"><div class="step-no">STEP 02</div><h3>初回トライアル</h3><div class="step-meta">単発・90分</div><p>オンラインで目標と生活を整理し、行動計画と振り返りを体験。本プログラムへ進む場合は、この費用を受講料に全額充当します。</p></div>
-<div class="flow-step"><div class="step-no">STEP 03</div><h3>2ヶ月プログラム</h3><div class="step-meta">全8回 / 週1回</div><p>週1回のオンライン面談と日常のLINE伴走で、行動と振り返りの習慣をつくります。</p></div>
+<div class="flow-step"><div class="step-no">STEP 01</div><h3>無料相談</h3><div class="step-meta">30分</div><p>悩みと希望を伺い、サービスが合うか確認します。無料相談を挟まず、体験から始めることもできます。</p></div>
+<div class="flow-step"><div class="step-no">STEP 02</div><h3>体験コーチング</h3><div class="step-meta">90分・15,000円（税込）</div><p>目指す生活と続かない理由を整理し、まず1週間の行動計画をつくります。体験のみの利用も可能。本契約時は体験料を全額充当します。</p></div>
+<div class="flow-step"><div class="step-no">STEP 03</div><h3>2ヶ月プログラム</h3><div class="step-meta">全8回 / 週1回</div><p>Notionの日記とコメント、週1回のオンライン面談で、現状を振り返り、次のアクションプランを再確認します。</p></div>
 <div class="flow-step"><div class="step-no">STEP 04</div><h3>その後</h3><div class="step-meta">任意</div><p>終了後の継続サポートは、ご希望に応じてご案内します。内容と条件は面談時に書面でお伝えします。</p></div>
 </div>
-<div class="note" style="margin-top:26px">※ 契約条件は、お申し込み時に書面（電子契約）にて明示します。<br/>※ 当サービスは満18歳以上の方を対象としております（18歳未満の方はご受講いただけません）。<br/>※ 本サービスは医療行為ではありません。疾病の診断・治療を目的とするものではなく、目標設定・行動計画・振り返りを通して、自己管理と生活習慣の定着を支援するコーチングです。<br/>※ 効果や成果には個人差があり、特定の結果を保証するものではありません。<br/>※ 個人情報・外部クラウド・AIの取扱いは<a href="privacy.html#ai" style="text-decoration:underline">プライバシーポリシー</a>をご確認ください。必要な個別同意は別途確認します。<br/>※ 中途解約・返金・キャンセルの条件は<a href="tokusho.html" style="text-decoration:underline">特定商取引法に基づく表記</a>をご確認ください。</div>
+<div class="note" style="margin-top:26px">※ 契約条件は、お申し込み時に書面（電子契約）にて明示します。<br/>※ 当サービスは満18歳以上の方を対象としております（18歳未満の方はご受講いただけません）。<br/>※ 本サービスは医療行為ではありません。疾病の診断・治療を目的とするものではなく、本人の目標に向けて、運動・睡眠・食事を土台とする習慣づくりと、行動・振り返り・調整の定着を支援するコーチングです。<br/>※ 効果や成果には個人差があり、特定の結果を保証するものではありません。<br/>※ 個人情報・外部クラウド・AIの取扱いは<a href="privacy.html#ai" style="text-decoration:underline">プライバシーポリシー</a>をご確認ください。必要な個別同意は別途確認します。<br/>※ 中途解約・返金・キャンセルの条件は<a href="tokusho.html" style="text-decoration:underline">特定商取引法に基づく表記</a>をご確認ください。</div>
 </div>
 </section>
 
@@ -430,12 +475,12 @@ section[id],div[id]{scroll-margin-top:78px}
   <div class="booth-banner booth-banner-left">
     <div class="booth-kicker">CASE</div>
     <h2>事例</h2>
-    <p>数字ではなく、現場で見てきたことを。</p>
+    <p>これまでの指導・支援の経験から。</p>
   </div>
 
   <div class="case-grid">
   <div class="record-case">
-    <div class="rc-top"><span>CASE 01</span><span>30代男性</span></div>
+    <div class="rc-top"><span>CASE 01｜パーソナルトレーニング</span><span>30代男性</span></div>
     <h3>肩に不安があっても、<br/>強い身体はつくれる。</h3>
     <p>肩の動きに制限があるクライアントに対し、コンディショニングとトレーニングを分けずに設計した。無理に動かさず、動かせる範囲から丁寧に進めながら、体幹・下肢を含めた全身の安定性を並行して構築。つらい部分だけを見るのではなく、その先の身体の使い方まで扱う。</p>
   </div>
@@ -446,43 +491,38 @@ section[id],div[id]{scroll-margin-top:78px}
   </div>
   </div>
 
-  <p class="record-note">※ 事例は個人が特定できないよう匿名化しています。<br/>※ 効果や成果には個人差があり、特定の結果を保証するものではありません。</p>
+  <p class="record-note">※ 過去の指導・支援の事例です。現在のオンラインコーチングには対面指導・施術は含まれません。<br/>※ 事例は個人が特定できないよう匿名化しています。<br/>※ 効果や成果には個人差があり、特定の結果を保証するものではありません。</p>
 </div>
 </section>
 <section class="booth members booth-members" id="items"><div class="wrap apparel-grid"><div class="apparel-image"><img alt="base discipline items" src="assets/img/items.webp" width="900" height="1350" loading="lazy" decoding="async"/></div><div class="apparel-copy"><div class="label">BASE DISCIPLINE｜ITEMS</div><h2>base disciplineを、<br/>日常に。</h2><div class="members-line" style="margin:26px 0"></div><p>身につけるもの。トレーニングで使うもの。<br/>毎日の生活で使うもの。<br/><strong>自分の基準を思い出すきっかけを、日常の中に。</strong></p></div></div></section>
-<div class="booth booth-contact" id="contact"><div class="booth-banner wrap"><div class="booth-kicker">COUNSELING</div><h2>無料相談</h2><p></p></div><section class="cta" id="counseling">
-<div class="wrap">
-<div class="label">FREE COUNSELING</div>
-<h2 class="counseling-title">まず30分。<br/><span class="nowrap-mobile">今の自分を整理する。</span></h2>
-<p><strong>無料個別相談｜30分</strong><br/><span style="font-size:13px;color:#6e6a62">売り込みはしません。話を聞いて終わっても大丈夫です。</span></p>
-<div class="note" style="max-width:650px;margin:28px auto 0;text-align:left">
-<strong>30分で整理すること</strong><br/>
-現在地 / 理想 / 続かない原因 / 最初の一歩
-</div>
-<div class="actions"><a class="btn btn-dark" href="https://lin.ee/9OyDmdiY" rel="noopener" target="_blank">30分の無料相談を予約する</a></div>
-<p style="font-size:13px;color:#6e6a62;margin-top:18px">ボタンから公式LINEへ進み、無料相談をご希望の旨をお知らせください。</p>
-</div>
-</section><section class="faq" id="faq">
+<div class="booth booth-contact" id="contact"><section class="entry-section" id="start"><div class="wrap">
+<div class="section-head"><div class="label">YOUR FIRST STEP</div><h2>まず話すか。<br/>実際に、試してみるか。</h2><p>まだ迷っている方は無料相談へ。支援を体験したい方は90分のコーチングへ。<br/>無料相談は必須ではありません。どちらも公式LINEから日時を調整します。</p></div>
+<div class="entry-options"><article class="entry-option" id="counseling"><div class="label">FIT CHECK</div><h3>まずは、合うか確かめる。</h3><div class="entry-price">無料相談 <small>／ 30分・オンライン</small></div><p>「自分の悩みに合う？」「どんな支援を受けられる？」を確認する時間です。</p><ul><li>現在の悩みと、期待することを伺う</li><li>サービス内容・進め方を説明する</li><li>料金や契約条件、気になる点を確認する</li></ul><p>持ち帰るもの：利用するか判断するための情報。</p><div class="actions"><a class="btn btn-dark" href="https://lin.ee/9OyDmdiY" rel="noopener" target="_blank">30分の無料相談を希望する</a></div><p class="entry-note">公式LINEで「無料相談希望」とお送りください。個別の行動計画の作成は体験で行います。</p></article>
+<article class="entry-option trial" id="trial"><div class="label">TRIAL COACHING</div><h3>続けるための一歩を、決める。</h3><div class="entry-price">15,000円（税込） <small>／ 90分・Zoom</small></div><p>実際にコーチングを受け、まず1週間試す行動を具体的にする時間です。</p><ul><li>なりたい姿と、今の生活のズレを整理する</li><li>続かない理由を振り返り、取り組むことを絞る</li><li>運動・睡眠・食事を土台に、いつ・何を・どれくらいやるか決める</li></ul><p>持ち帰るもの：まず1週間の具体的な行動計画。</p><div class="actions"><a class="btn btn-dark" href="https://lin.ee/9OyDmdiY" rel="noopener" target="_blank">90分の体験を希望する｜15,000円</a></div><p class="entry-note">公式LINEで「体験希望」とお送りください。体験のみでも利用できます。2ヶ月プログラムの本契約時は、体験料15,000円を全額受講料に充当します。予約・支払条件は申込み前にご案内します。</p></article></div>
+</div></section><section class="faq" id="faq">
 <div class="wrap"><div class="label">FAQ</div><h2>よくある質問</h2>
 <div class="faq-grid">
-<details><summary>無料相談では何をしますか？</summary><p>30分で現在地・理想・続かない原因を整理し、最初の一歩を明確にします。</p></details>
+<details><summary>無料相談では何をしますか？</summary><p>現在の悩みと希望を伺い、サービスが合うか一緒に確認します。支援内容・料金・条件への疑問を解消する場です。具体的な行動計画の作成は、90分の体験で行います。</p></details>
+<details><summary>無料相談と体験はどう違いますか？</summary><p>無料相談（30分）は、サービスが自分に合うか確認する時間です。体験（90分・15,000円税込）は、実際にコーチングを受け、運動・睡眠・食事を土台にまず1週間の行動計画をつくる時間です。無料相談を挟まず、体験から始めることもできます。</p></details>
 <details><summary>料金はいくらですか？</summary><p>2ヶ月 自己管理自走化プログラムの料金は、内容と現在地を伺ったうえで初回のご相談（面談）にてご案内します。初回トライアルは15,000円（税込）／90分。本契約時は全額を受講料に充当します。</p></details>
+<details><summary>目標がまだ曖昧でも受けられますか？</summary><p>受けられます。どんな生活を送りたいか、大切にしたいことは何かを一緒に整理し、取り組む方向と日々の行動を具体化します。</p></details>
+<details><summary>目標の達成まで支援してもらえますか？</summary><p>本サービスは、目標に向けて行動を継続できる習慣づくりを支援する2ヶ月間のコーチングです。特定の目標の達成や、達成するまでの無期限の支援を約束するものではありません。運動・睡眠・食事を土台に、行動を振り返って、ご自身で次の行動を決められる状態を目指します。</p></details>
 <details><summary>毎日連絡する必要はありますか？</summary><p>連絡は必須ではありません。日記は1行でも大丈夫です。いただいた日記には、1日1回、翌日12時まで（日曜を除く）にコメントを返します。即時返信・緊急対応は含みません。提出を義務にすると続かなくなるので、書けない日は書けないままで構いません。</p></details>
 <details><summary>運動が苦手でも大丈夫ですか？</summary><p>大丈夫です。対象は「一人では習慣や行動を続けにくい」方です。運動経験は問いません。睡眠・食事・時間の使い方など、今の生活で取り組めることから始めます。</p></details>
 <details><summary>2ヶ月で足りますか？</summary><p>2ヶ月で、行動・記録・振り返りの流れを身につけることを目指します。最終回では、ご自身で続けるための行動計画と、崩れたときの戻し方を整理します。なお、効果や成果には個人差があり、特定の結果を保証するものではありません。</p></details>
-<details><summary>オンラインだけで完結しますか？</summary><p>はい。全8回の面談はZoom、日常の伴走はLINEと記録で行い、対面での提供は含みません。ご自宅等から受講できます。日時は日本時間で調整します。</p></details>
+<details><summary>オンラインだけで完結しますか？</summary><p>はい。全8回の面談はZoom、日常の伴走はNotionの日記とコメントで行い、対面での提供は含みません。ご自宅等から受講できます。日時は日本時間で調整します。</p></details>
 <details><summary>年齢制限はありますか？</summary><p>満18歳以上の方のみお申し込みいただけます。18歳未満の方はご利用いただけません。</p></details>
 <details><summary>解約・返金はできますか？</summary><p>できます。LINE・メール等の客観的記録に残る方法で通知いただければ中途解約が可能です。詳細は<a href="tokusho.html">特定商取引法に基づく表記</a>をご確認ください。</p></details>
 <details><summary>個人情報やAIの利用はどう扱いますか？</summary><p>予約・回数券の管理や記録の整理等に、外部クラウドやAIを補助的に利用することがあります。扱う情報を必要な範囲に絞り、個人情報をAIで扱う前に利用条件を確認し、必要な説明・同意取得を行います。AIの出力は運営者が確認します。詳細は<a href="privacy.html#ai">プライバシーポリシーのAI利用について</a>をご確認ください。AI利用を希望しない場合は、お申込み前にご相談いただけます。</p></details>
 <details><summary>医療行為ですか？</summary><p>いいえ。自己管理・生活習慣の定着を目的としたコーチングです。診断・治療、心理療法、医療上の栄養指導は行いません。身体や心に不調がある場合は、適切な医療機関への相談を優先してください。</p></details>
-<details><summary>トレーニング指導が中心ですか？</summary><p>中心となるのは、目標設定、行動の具体化、記録と振り返りを通じた自己管理の定着です。運動は必要に応じて扱うテーマの一つです。パーソナルトレーニングやコンディショニングの個別指導は別サービスとしてご案内します。</p></details>
-<details><summary>単発のセッションだけでも受けられますか？</summary><p>受けられます。初回トライアル単発セッション（90分）は、オンライン（Zoom）で実施します。本プログラムにお進みの場合は、この費用を全額受講料に充当します。プログラム終了後の継続サポートについても、ご希望に応じてご案内します。内容・料金・条件は面談時に書面で明示します。</p></details>
+<details><summary>トレーニング指導が中心ですか？</summary><p>中心となるのは、運動・睡眠・食事を生活の土台として整え、ご自身の目標につながる行動を継続するための習慣づくりです。毎回の対話・計画・振り返りを通して支援します。パーソナルトレーニングやコンディショニングの個別指導は別サービスとしてご案内します。</p></details>
+<details><summary>単発のセッションだけでも受けられますか？</summary><p>受けられます。体験コーチング（90分・15,000円税込）は、オンライン（Zoom）で実施します。まず1週間の行動計画をつくる内容で、体験だけでもご利用いただけます。本プログラムにお進みの場合は、この費用を全額受講料に充当します。プログラム終了後の継続サポートについても、ご希望に応じてご案内します。内容・料金・条件は面談時に書面で明示します。</p></details>
 
 </div></div>
 </section></div>
 
 <section class="cta booth-final">
-<div class="wrap"><div class="label">START</div><h2 class="final-title">整えることは、<br class="mobile-only-break"/>攻めることだ。</h2><p>身体を整え、時間を取り戻す。<br/>その力が、次の2ヶ月をつくる。</p><p style="font-size:13px;opacity:.75;margin-top:14px">お申し込みは満18歳以上の方に限ります。</p><div class="actions"><a class="btn btn-dark" href="https://lin.ee/9OyDmdiY" rel="noopener" target="_blank">30分の無料相談を予約する</a></div></div>
+<div class="wrap"><div class="label">START</div><h2 class="final-title">整えることは、<br class="mobile-only-break"/>攻めることだ。</h2><p>目指す生き方を、毎日の行動につなげる。<br/>運動・睡眠・食事から、続けられる形を一緒につくる。</p><p style="font-size:13px;opacity:.75;margin-top:14px">お申し込みは満18歳以上の方に限ります。</p><div class="actions"><a class="btn btn-dark" href="#start">無料相談・体験を選ぶ</a></div></div>
 </section>
 </main>
 <footer><img alt="base discipline" src="assets/img/logo.webp" width="400" height="267" decoding="async"/><small>© 2026 base discipline. Built on discipline.</small></footer>
@@ -494,7 +534,7 @@ section[id],div[id]{scroll-margin-top:78px}
   <a href="privacy.html" style="color:inherit;text-decoration:underline;">プライバシーポリシー</a>
 </div>
 
-<div class="sticky-cta"><a href="https://lin.ee/9OyDmdiY" rel="noopener" target="_blank">30分の無料相談を予約する</a></div>
+<div class="sticky-cta"><a href="#start">無料相談・15,000円の体験を選ぶ</a></div>
 
 <script>/* header: solid on scroll so the logo stays legible over light sections */
 (function(){var h=document.querySelector("header");var f=function(){h.classList.toggle("is-scrolled",window.scrollY>80)};f();addEventListener("scroll",f,{passive:true});})();</script>
